@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import {HelloFromLibA} from "libA/src";
+import {HelloFromLibA} from "libA";
 
 const rootEl = document.getElementById('root');
 if (rootEl) {
