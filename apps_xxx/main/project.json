@@ -3,7 +3,7 @@
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "rsbuild build",
+        "command": "pnpm run build",
         "cwd": "{projectRoot}"
       }
     }

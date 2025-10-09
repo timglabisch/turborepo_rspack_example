@@ -13,9 +13,8 @@
     }
   },
   "scripts": {
-    "build": "rsbuild build",
-    "dev": "rsbuild dev --open",
-    "preview": "rsbuild preview"
+    "build": "rslib build",
+    "dev": "rslib build --watch"
   },
   "peerDependencies": {
     "react": "^19.2.0",
@@ -24,6 +23,7 @@
   "devDependencies": {
     "@rsbuild/core": "^1.5.14",
     "@rsbuild/plugin-react": "^1.4.1",
+    "@rslib/core": "^0.15.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
     "typescript": "^5.9.3"
