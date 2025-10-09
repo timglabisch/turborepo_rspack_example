@@ -1,7 +1,11 @@
 {
   "targets": {
     "build": {
-      "executor": "rsbuild build"
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "rsbuild build",
+        "cwd": "{projectRoot}"
+      }
     }
   }
 }
