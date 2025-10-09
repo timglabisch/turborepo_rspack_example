@@ -3,7 +3,7 @@
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "rsbuild build",
+        "command": "rsbuild build && tsc -p tsconfig.build.json",
         "cwd": "{projectRoot}"
       }
     }

@@ -1,9 +1,7 @@
-import React from 'react';
-
 export function HelloFromLibA() {
     return (
         <div>
-            Hello from LibA
+            Hello from LibA????
         </div>
     )
 }
