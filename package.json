@@ -1,0 +1,13 @@
+{
+  "name": "@examplenx/root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nx run-many --target=build",
+    "test": "nx run-many --target=test",
+    "lint": "nx run-many --target=lint"
+  },
+  "devDependencies": {
+    "nx": "latest"
+  }
+}
