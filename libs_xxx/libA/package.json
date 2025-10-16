@@ -3,17 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "main": "./index.js",
-  "module": "./index.js",
-  "types": "./index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./index.js",
-      "types": "./index.d.ts"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
-  },
-  "publishConfig": {
-    "directory": "./dist"
   },
   "scripts": {
     "build": "rslib build",

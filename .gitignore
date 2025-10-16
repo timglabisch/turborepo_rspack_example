@@ -4,6 +4,7 @@
 .nx/workspace-data
 node_modules
 .idea
+.turbo
 
 
 .cursor/rules/nx-rules.mdc

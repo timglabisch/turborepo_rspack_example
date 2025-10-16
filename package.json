@@ -2,12 +2,13 @@
   "name": "@examplenx/root",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "build": "nx run-many --target=build",
-    "test": "nx run-many --target=test",
-    "lint": "nx run-many --target=lint"
+  "packageManager": "pnpm@10.0.0",
+  "scripts_IGNORE": {
+    "build": "turbo build build",
+    "dev": "turbo build dev"
   },
   "devDependencies": {
-    "nx": "latest"
+    "nx": "latest",
+    "turbo": "^2.5.8"
   }
 }
