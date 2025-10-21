@@ -15,10 +15,12 @@ export default defineConfig({
         alias: {"@": "./src"},
     },
 
+    output: {
+        filename: { css: 'shadcn-system.css' },
+    },
     source: {
         entry: {
             index: './src/index.tsx',
-            styles: "./src/styles/globals.css",
         },
     },
     tools: {
@@ -39,7 +41,6 @@ export default defineConfig({
             }
         },
 
-        // Optional: erlaubt CSS-Text via '?inline' (z.B. für Shadow DOM)
         rspack: {
             module: {
                 rules: [
@@ -47,7 +48,6 @@ export default defineConfig({
                         test: /\.css$/,
                         oneOf: [
                             {resourceQuery: /inline/, type: "asset/source"},
-                            // Standardpfad leer lassen → Rsbuild extrahiert CSS automatisch als Datei
                         ],
                     },
                 ],
