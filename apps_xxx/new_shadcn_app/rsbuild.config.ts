@@ -13,15 +13,21 @@ export default defineConfig({
     output: {
         target: "web",
         distPath: { root: "dist", css: "styles" },
+        /*
         filename: { css: "shadcn-system.css" },
         library: {
             name: "ShadowApp", // z.B. window.ShadowApp
             type: "umd",
         },
+
+         */
+    /*
         externals: {
             react: "React",
             "react-dom": "ReactDOM",
         },
+
+     */
     },
 
     tools: {
