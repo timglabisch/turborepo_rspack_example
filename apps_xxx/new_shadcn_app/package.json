@@ -1,25 +1,12 @@
 {
-  "name": "libWithShadcn",
+  "name": "new_shadcn_app",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./styles/shadcn-system.css": "./dist/styles/shadcn-system.css"
-  },
   "scripts": {
-    "build": "rslib build",
-    "dev": "rslib build --watch"
-  },
-  "peerDependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
+    "preview": "rsbuild preview"
   },
   "devDependencies": {
     "@rsbuild/core": "^1.5.14",
