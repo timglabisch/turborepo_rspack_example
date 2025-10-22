@@ -6,7 +6,7 @@ node_modules
 .idea
 .turbo
 dist/
-
+@mf-types/
 
 .cursor/rules/nx-rules.mdc
 .github/instructions/nx.instructions.md
