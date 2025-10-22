@@ -1,8 +1,31 @@
 import { defineConfig } from "@rsbuild/core";
+import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
 import { pluginReact } from "@rsbuild/plugin-react";
+const isDev = process.env.NODE_ENV !== "production";
 
 export default defineConfig({
-    plugins: [pluginReact()],
+    plugins: [
+        pluginReact(),
+        pluginModuleFederation({
+            name: 'new_shadcn_app',
+            exposes: {
+                './newShadcnExampleComponent': './src/newShadcnExampleComponent.tsx',
+            },
+            //shared: ['react', 'react-dom'],
+            dts: isDev ? false : { },
+            manifest: isDev ? false : { },
+        }),
+    ],
+
+    dev: {
+        watchFiles: {
+            paths: './src/**',
+        },
+    },
+
+    server: {
+        port: 3000,
+    },
 
     source: {
         entry: {
