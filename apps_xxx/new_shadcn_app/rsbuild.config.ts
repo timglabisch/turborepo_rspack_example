@@ -9,49 +9,10 @@ export default defineConfig({
         pluginModuleFederation({
             name: 'new_shadcn_app',
             exposes: {
-                './newShadcnExampleComponent': './src/newShadcnExampleComponent.tsx',
+                './NewShadcnExampleComponent': './src/NewShadcnExampleComponent.tsx',
             },
-            //shared: ['react', 'react-dom'],
-            dts: isDev ? false : { },
-            manifest: isDev ? false : { },
         }),
     ],
-
-    dev: {
-        watchFiles: {
-            paths: './src/**',
-        },
-    },
-
-    server: {
-        port: 3000,
-    },
-
-    source: {
-        entry: {
-            index: "./src/index.tsx", // Einstiegspunkt deiner App
-        },
-    },
-
-    output: {
-        target: "web",
-        distPath: { root: "dist", css: "styles" },
-        /*
-        filename: { css: "shadcn-system.css" },
-        library: {
-            name: "ShadowApp", // z.B. window.ShadowApp
-            type: "umd",
-        },
-
-         */
-    /*
-        externals: {
-            react: "React",
-            "react-dom": "ReactDOM",
-        },
-
-     */
-    },
 
     tools: {
         postcss: (opts) => {

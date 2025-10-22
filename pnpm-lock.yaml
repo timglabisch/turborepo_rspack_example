@@ -27,6 +27,12 @@ importers:
         specifier: ^19.2.0
         version: 19.2.0(react@19.2.0)
     devDependencies:
+      '@module-federation/enhanced':
+        specifier: ^0.19.1
+        version: 0.19.1(@rspack/core@1.5.8(@swc/helpers@0.5.17))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)(webpack@5.102.1)
+      '@module-federation/rsbuild-plugin':
+        specifier: ^0.19.1
+        version: 0.19.1(@rsbuild/core@1.5.15)(@rspack/core@1.5.8(@swc/helpers@0.5.17))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)(webpack@5.102.1)
       '@rsbuild/core':
         specifier: ^1.5.14
         version: 1.5.15

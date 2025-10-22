@@ -5,6 +5,7 @@
 node_modules
 .idea
 .turbo
+dist/
 
 
 .cursor/rules/nx-rules.mdc
