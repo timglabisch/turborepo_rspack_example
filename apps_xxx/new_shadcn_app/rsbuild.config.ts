@@ -36,7 +36,7 @@ export default defineConfig({
             opts.postcssOptions.plugins ??= [];
             // Tailwind + Autoprefixer aktivieren
             opts.postcssOptions.plugins.push(
-                require("tailwindcss"),
+                require("@tailwindcss/postcss"),
                 require("autoprefixer"),
             );
         },
