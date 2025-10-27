@@ -1,5 +1,5 @@
 import type * as React from "react";
-import shadcnStyles from "./../styles/globals.css?inline";
+import shadcnStyles from "../../styles/globals.css?inline";
 import {ShadowDomContainer} from "@easybill/shadowdom";
 
 interface ShadcnContainerProps {
