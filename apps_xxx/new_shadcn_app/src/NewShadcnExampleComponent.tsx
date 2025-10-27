@@ -1,11 +1,11 @@
 import React from 'react';
-import {ShadcnContainer} from "@/components/ShadcnContainer/shadcnContainer";
 import {Button} from "@/components/ui/button";
+import ShadcnContainer from "@/components/ShadcnContainer/shadcnContainer";
 
 export default function NewShadcnExampleComponent() {
     return (
-        <div>
+        <ShadcnContainer>
             <Button>Hello From Module Federation!</Button>
-        </div>
+        </ShadcnContainer>
     )
 }
