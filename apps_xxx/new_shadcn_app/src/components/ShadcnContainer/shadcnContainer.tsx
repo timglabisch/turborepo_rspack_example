@@ -8,7 +8,7 @@ interface ShadcnContainerProps {
     className?: string;
 }
 
-export const ShadcnContainer: React.FC<ShadcnContainerProps> = ({ children, useShadowDom = true, className = "" }) => {
+export default function ShadcnContainer({ children, useShadowDom = true, className = "" } : ShadcnContainerProps) {
     if (!useShadowDom) {
         return <div className={`shadcn-container ${className}`}>{children}</div>;
     }

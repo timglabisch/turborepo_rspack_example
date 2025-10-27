@@ -10,11 +10,19 @@ export default defineConfig({
             name: 'new_shadcn_app',
             exposes: {
                 './NewShadcnExampleComponent': './src/NewShadcnExampleComponent.tsx',
+                './ShadcnContainer': './src/components/ShadcnContainer/shadcnContainer.tsx',
             },
             shared: {
-                react: { singleton: true },
-                'react-dom': { singleton: true },
+                react: {
+                    singleton: true,
+                    eager: true,
+                },
+                'react-dom': {
+                    singleton: true,
+                    eager: true,
+                },
             },
+            dts: false, // DTS-Generierung deaktivieren
         }),
     ],
 

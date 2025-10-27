@@ -12,9 +12,16 @@ export default defineConfig({
               new_shadcn_app: 'new_shadcn_app@http://localhost:3002/mf-manifest.json',
           },
           shared: {
-              react: { singleton: true },
-              'react-dom': { singleton: true },
+              react: {
+                  singleton: true,
+                  eager: true,
+              },
+              'react-dom': {
+                  singleton: true,
+                  eager: true,
+              },
           },
+          dts: false, // DTS-Generierung deaktivieren
       }),
   ],
 
