@@ -11,8 +11,26 @@ export default defineConfig({
             exposes: {
                 './NewShadcnExampleComponent': './src/NewShadcnExampleComponent.tsx',
             },
+            shared: {
+                react: {
+                    singleton: true,
+                    requiredVersion: '^19.2.0',
+                },
+                'react-dom': {
+                    singleton: true,
+                    requiredVersion: '^19.2.0',
+                },
+            },
         }),
     ],
+
+    server: {
+        port: 3002,
+    },
+
+    dev: {
+        assetPrefix: 'http://localhost:3002',
+    },
 
     tools: {
         postcss: (opts) => {
