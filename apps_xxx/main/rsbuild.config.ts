@@ -12,23 +12,13 @@ export default defineConfig({
               new_shadcn_app: 'new_shadcn_app@http://localhost:3002/mf-manifest.json',
           },
           shared: {
-              react: {
-                  singleton: true,
-                  requiredVersion: '^19.2.0',
-              },
-              'react-dom': {
-                  singleton: true,
-                  requiredVersion: '^19.2.0',
-              },
+              react: { singleton: true },
+              'react-dom': { singleton: true },
           },
       }),
   ],
 
     server: {
         port: 3001,
-    },
-
-    dev: {
-        assetPrefix: 'http://localhost:3001',
     },
 });

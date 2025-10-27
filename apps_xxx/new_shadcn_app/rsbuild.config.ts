@@ -12,14 +12,8 @@ export default defineConfig({
                 './NewShadcnExampleComponent': './src/NewShadcnExampleComponent.tsx',
             },
             shared: {
-                react: {
-                    singleton: true,
-                    requiredVersion: '^19.2.0',
-                },
-                'react-dom': {
-                    singleton: true,
-                    requiredVersion: '^19.2.0',
-                },
+                react: { singleton: true },
+                'react-dom': { singleton: true },
             },
         }),
     ],
